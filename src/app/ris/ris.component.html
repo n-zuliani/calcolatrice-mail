@@ -1,0 +1,15 @@
+<input type="number" #n1>
+<input type="number" #n2>
+<button (click)="addNumber(n1,n2)">+</button>
+<button (click)="removeNumber(n1,n2)">-</button>
+<button (click)="multiNumber(n1,n2)">*</button>
+<button (click)="divideNumber(n1,n2)">/</button>
+
+<input type="number" value="{{ris}}" />
+<p>{{seq}}</p>
+
+<button (click)="toggle()">Nascondi/mostra mail</button>
+<form *ngIf="show">
+    <input type="email" />
+    <input type="submit" value="Invia mail" />
+</form>
